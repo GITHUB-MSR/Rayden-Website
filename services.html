@@ -1,0 +1,536 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Rayden Technologies | Your EMS Partner</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="file:///C:/Users/surya/OneDrive/ONE%20DRIVE/Desktop/Rayden/Rayden/Fav.ico">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		
+    </head>
+    <body>
+
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+	
+
+		
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="index.html"><img src="Logo.png" alt="#" style="width: 100px; padding-bottom: 5px;"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12" >
+								<!-- Main Menu -->
+								<div class="main-menu"  >
+									<nav class="navigation" > 
+										<ul class="nav menu">
+											<li><a href="index.html">Home </a></li>
+											<li><a href="About.html">About Us </a></li>
+											<li><a href="products.html">Products <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="404.html">EMS</a></li>
+													<li><a href="404.html">IOT</a></li>
+													<li><a href="404.html">Kavach</a></li>
+													<li><a href="404.html">RFID Tags</a></li>
+													<li><a href="404.html">RF Survey</a></li>
+												</ul>
+											</li>
+                                            <li class="active">
+                                                <a href="services.html" >Services<i class="icofont-rounded-down"></i></a>
+                                                <ul class="dropdown">
+                                                    <li class="has-submenu">
+                                                        <a href="#" class="submenu-link">Kavach Installations</a>
+                                                        <ul class="submenu">
+                                                            <li><a href="#">Loco Kavach</a></li>
+                                                            <li><a href="#">Station Kavach</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-submenu">
+                                                        <a href="#">RF Survey</a>
+                                                        <ul class="submenu">
+                                                            <li><a href="#">LTE</a></li>
+                                                            <li><a href="#">M.Com Survey</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+											<li><a href="contact.html">Contact Us</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const submenuItems = document.querySelectorAll('.has-submenu');
+				
+				submenuItems.forEach(item => {
+					const links = item.querySelectorAll('a');
+					links.forEach(link => {
+						link.addEventListener('click', function(e) {
+							if (this.getAttribute('href') === '#') {
+								e.preventDefault();
+							}
+							document.querySelectorAll('.submenu-link').forEach(l => {
+								l.parentElement.classList.remove('active');
+							});
+							this.parentElement.classList.add('active');
+						});
+					});
+				});
+			});
+			</script>
+
+		<!-- End Header Area -->
+		
+
+
+
+
+
+
+		<style>
+			body{
+				overflow-x: hidden;
+			}
+			.card {
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			border: none;
+			border-radius: 15px;
+			overflow: hidden;
+			background: linear-gradient(145deg, #ffffff, #f3f3f3);
+			}
+
+			.card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+			}
+
+			.card-body {
+			padding: 2rem;
+			}
+
+			.card-body h3 {
+			color: #2b4c7e;
+			margin-bottom: 1rem;
+			font-weight: 600;
+			}
+
+			.card-body p {
+			color: #000000;
+			line-height: 1.6;
+			}
+
+			.card-body ul {
+			padding-left: 1.2rem;
+			margin: 1rem 0;
+			}
+
+			.card-body ul li {
+			color: #000000;
+			margin-bottom: 0.5rem;
+			}
+
+			.btn {
+			background: linear-gradient(45deg, #2b4c7e, #567ebb);
+			color: white;
+			padding: 10px 25px;
+			border-radius: 25px;
+			transition: all 0.3s ease;
+			border: none;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			letter-spacing: 1px;
+			}
+
+			.btn:hover {
+			background: linear-gradient(45deg, #567ebb, #2b4c7e);
+			transform: scale(1.05);
+			color: white;
+			}
+
+			.breadcrumbs-section {
+			background: linear-gradient(45deg, #151414, #2b4c7e, #000000) !important;
+			color: white;
+			padding: 3rem 0 !important;
+			}
+
+			.breadcrumbs-section h1 {
+			color: white;
+			font-weight: 200;
+			letter-spacing: 2px;
+			font-size: 30px;
+			}
+
+			.btn {
+				background: linear-gradient(45deg, #1a3d68, #2b4c7e);
+				color: #ffffff;
+				padding: 12px 28px;
+				border-radius: 30px;
+				transition: all 0.4s ease;
+				border: none;
+				box-shadow: 0 4px 15px rgba(43, 76, 126, 0.2);
+			}
+
+			.btn:hover {
+				background: linear-gradient(45deg, #2b4c7e, #3a6db8);
+				transform: translateY(-3px) scale(1.02);
+				box-shadow: 0 6px 20px rgba(43, 76, 126, 0.4);
+				color: #ffffff;
+			}
+
+			.btn:active {
+				transform: translateY(1px);
+				box-shadow: 0 2px 10px rgba(43, 76, 126, 0.3);
+			}
+		</style>
+
+
+
+
+
+		<!-- Breadcrumbs -->
+		<section class="breadcrumbs-section py-4 bg-light">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 text-center"></div>
+						<div class="col-12 text-center">
+							<h1 class="display-4 mb-3">Services</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Breadcrumbs -->
+
+		<!-- Services Section -->
+		<section class="services section text-center">
+
+				<!-- Kavach Installations -->
+				<h3 class="mb-4 text-center">Kavach Installations</h3>
+<br><br>
+				<div class="row mb-5">
+					<!-- Loco Kavach -->
+					<div class="col-lg-6 col-md-6 col-12 mb-4">
+						<div class="service-item">
+							<div class="service-head">
+								<h4>Loco Kavach Solutions</h4>
+							</div>
+							<div class="service-content">
+								<div class="service-image mb-4">
+								<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/WDM-3D_class_Locomotive_of_Indian_Railway.jpg/1599px-WDM-3D_class_Locomotive_of_Indian_Railway.jpg" alt="Loco Kavach" class="img-fluid rounded" style="width: 400px;">
+								</div>
+								<div class="service-text">
+									<ul class="list-unstyled">
+										<li style="color: black;" ><i class="icofont-check-circled"></i> TCAS Installation</li>
+										<li style="color: black;" ><i class="icofont-check-circled"></i> SIL4 Implementation</li>
+										<li style="color: black;" ><i class="icofont-check-circled"></i> Automated Breaking System</li>
+									</ul>
+									<br>
+									<a href="#" class="btn" style="color: white;">Click For Quotation</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Station Kavach -->
+					<div class="col-lg-6 col-md-6 col-12 mb-4">
+						<div class="service-item">
+							<div class="service-head">
+								<h4>Station Kavach Solutions</h4>
+							</div>
+							<div class="service-content">
+								<div class="service-image mb-4">
+								<br><img src="https://avatars.mds.yandex.net/i?id=fa2e124d4235f76d4ab8cb3e5bfb13e65eb22e63-12544206-images-thumbs&n=13" alt="Loco Kavach" class="img-fluid rounded" style="width: 400px;">
+								</div>
+								<div class="service-text">
+									<ul class="list-unstyled">
+										<li style="color: black;" ><i class="icofont-check-circled"></i> TCAS Installation</li>
+										<li style="color: black;" ><i class="icofont-check-circled"></i> SIL4 Implementation</li>
+										<li style="color: black;" ><i class="icofont-check-circled"></i> Automated Breaking System</li>
+									</ul>
+									<br>
+									<a href="#" class="btn" style="color: white;">Click For Quotation</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- RF Survey -->
+				<h3 class="mb-4">RF Survey</h3>
+				<br><br>
+
+				<div class="row">
+					<!-- M.Com Survey -->
+					<div class="col-lg-6 col-md-6 col-12 mb-4">
+						<div class="service-item">
+							<div class="service-head">
+								<h4>M.Com Survey Analysis</h4>
+							</div>
+							<div class="service-content">
+								<div class="service-image mb-4">
+								<br><img src="https://standards.ieee.org/wp-content/uploads/2022/04/Electrical-Testing.jpg" alt="Loco Kavach" class="img-fluid rounded" style="width: 400px;">
+								</div>
+								<div class="service-text">
+									<ul class="list-unstyled">
+										<li style="color: black;" ><i class="icofont-check-circled"></i> TCAS Installation</li>
+										<li style="color: black;" ><i class="icofont-check-circled"></i> SIL4 Implementation</li>
+										<li style="color: black;" ><i class="icofont-check-circled"></i> Automated Breaking System</li>
+									</ul>
+									<br>
+									<a href="#" class="btn" style="color: white;">Click For Quotation</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- LTE -->
+					<div class="col-lg-6 col-md-6 col-12 mb-4">
+						<div class="service-item">
+							<div class="service-head">
+								<h4>LTE Solutions</h4>
+							</div>
+							<div class="service-content">
+								<div class="service-image mb-4">
+								<br><img src="https://standards.ieee.org/wp-content/uploads/2022/04/Electrical-Testing.jpg" alt="Loco Kavach" class="img-fluid rounded" style="width: 400px;">
+								</div>
+								<div class="service-text">
+									<ul class="list-unstyled">
+										<li style="color: black;" ><i class="icofont-check-circled"></i> TCAS Installation</li>
+										<li style="color: black;" ><i class="icofont-check-circled"></i> SIL4 Implementation</li>
+										<li style="color: black;" ><i class="icofont-check-circled"></i> Automated Breaking System</li>
+									</ul>
+									<br>
+									<a href="#" class="btn" style="color: white;">Click For Quotation</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Additional Services Info -->
+				<div class="row mt-5">
+					<div class="col-12">
+						<div class="service-additional p-4 bg-light rounded">
+							<h4>Why Choose Our Services?</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<ul class="list-unstyled">
+										<li style="color: black;"><i class="icofont-check-circled"></i> Certified Technical Experts</li>
+										<li style="color: black;"><i class="icofont-check-circled"></i> 24/7 Support Services</li>
+										<li style="color: black;"><i class="icofont-check-circled"></i> Comprehensive Documentation</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<ul class="list-unstyled">
+										<li style="color: black;"><i class="icofont-check-circled"></i> Quality Assurance</li>
+										<li style="color: black;"><i class="icofont-check-circled"></i> Timely Project Delivery</li>
+										<li style="color: black;"><i class="icofont-check-circled"></i> Post-Installation Support</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Services Section -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Open Hours</h2>
+								<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
+								<ul class="time-sidual">
+									<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+									<li class="day">Saturday <span>9.00-18.30</span></li>
+									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Newsletter</h2>
+								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2018  |  All Rights Reserved by <a href="https://www.wpthemesgrid.com" target="_blank">wpthemesgrid.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+		<!-- jquery Migrate JS -->
+		<script src="js/jquery-migrate-3.0.0.js"></script>
+		<!-- jquery Ui JS -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- Easing JS -->
+        <script src="js/easing.js"></script>
+		<!-- Color JS -->
+		<script src="js/colors.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!-- Jquery Nav JS -->
+        <script src="js/jquery.nav.js"></script>
+		<!-- Slicknav JS -->
+		<script src="js/slicknav.min.js"></script>
+		<!-- ScrollUp JS -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Niceselect JS -->
+		<script src="js/niceselect.js"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="js/tilt.jquery.min.js"></script>
+		<!-- Owl Carousel JS -->
+        <script src="js/owl-carousel.js"></script>
+		<!-- counterup JS -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- Steller JS -->
+		<script src="js/steller.js"></script>
+		<!-- Wow JS -->
+		<script src="js/wow.min.js"></script>
+		<!-- Magnific Popup JS -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+    </body>
+</html>
